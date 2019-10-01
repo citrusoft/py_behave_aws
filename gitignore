@@ -1,19 +1,8 @@
-*.egg-info
-.DS_Store
-.coverage
-.idea/
-.tox/
-.venv*/
-.vscode/
+# Byte-compiled / optimized / DLL files
 __pycache__/
-_/
-_WORKSPACE/
-__*/
-__*.txt
-__*.rst
-*.output
 *.py[cod]
 *$py.class
+
 # C extensions
 *.so
 
@@ -113,7 +102,3 @@ venv.bak/
 
 # mypy
 .mypy_cache/
-
-# -- IGNORE: GIT MULTI-REPO SUBPROJECTS
-parts/sphinxcontrib-ansi/
-parts/sphinxcontrib-programoutput/

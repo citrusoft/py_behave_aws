@@ -1,0 +1,25 @@
+#
+# Filename: ScpBlockCloudTrailCfgAccess.json
+# Author: thunt@citrusoft.org
+# Description: Prevents anyone in any of the member accounts from creating or modifying any AWS CloudTrail logs that we configure
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1234567890123",
+            "Effect": "Deny",
+            "Action": [       
+                "cloudtrail:AddTags",    
+                "cloudtrail:CreateTrail",       
+                "cloudtrail:DeleteTrail",       
+                "cloudtrail:RemoveTags",       
+                "cloudtrail:StartLogging",       
+                "cloudtrail:StopLogging",       
+                "cloudtrail:UpdateTrail"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}

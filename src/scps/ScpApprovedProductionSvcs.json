@@ -1,0 +1,21 @@
+#
+# Filename: ScpApprovedProductionSvcs.json
+# Author: thunt@citrusoft.org
+# Description: An allow list of all the services and actions that you want to enable for users and roles in the Production OU.
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1111111111111",
+            "Effect": "Allow",
+            "Action": [ 
+                "ec2:*",
+                "elasticloadbalancing:*",
+                "codecommit:*",
+                "cloudtrail:*",
+                "codedeploy:*"
+              ],
+            "Resource": [ "*" ]
+        }
+    ]
+}
